@@ -1,0 +1,133 @@
+body {
+overflow:hidden;
+display:none;
+}
+
+/* Body Defaults */
+
+html {
+  cursor: none !important;
+}
+
+html:active {
+  cursor: none !important;
+}
+
+@font-face {
+  font-family: 'Gotham SSm';
+  src: local('Gotham SSm'), url("./GothamSSm-Book.ttf") format('ttf'), 
+    url("./GothamSSm-Book.otf") format('otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gotham SSm", Verdana, sans-serif !important;
+  background: black !important;
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow-y: hidden;
+}
+
+h1, h2, h3, p {
+  font-family: "Gotham SSm", Verdana, sans-serif !important;
+  color: black !important;
+}
+
+h1 {
+  font-size: 5rem !important;
+}
+
+/* Home Text  */
+.center h1, h2 {
+  color: white !important;
+}
+
+.home-title {
+  margin-bottom: 40%;
+  margin-top: -20% !important;
+}
+
+.home-subtitle {
+  margin-bottom: 5%;
+}
+
+
+
+.b-container {
+  background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./background.png');
+  background-size:cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.b-container > .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  text-align: center;
+  color: #AA2D29;
+  margin-bottom: 10px;
+}
+
+.btn--play {
+  z-index: 1;
+  border: none !important;
+  background: transparent url(play-button.svg) no-repeat center top !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.btn--play.label--bottom {
+    background-size: 50%!important;
+    padding-top: 5em;
+    width: 8.5em;
+    padding-bottom: 1em;
+}
+
+.btn--play:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.7));
+    cursor: pointer;
+}
+
+@keyframes fademein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fademeout {
+  0% { opacity: 1; }
+  100%   { opacity: 0; }
+}
+
+/* Language Button  */
+.language-button {
+  font-family: "Gotham SSm" !important;
+  font-weight: 250 !important;
+  color: white !important;
+  background-color: #E64C38 !important;
+}
+
+.language-button:hover {
+  background-color: #c1301b !important;
+}
+
+.language-button:active {
+  opacity: 0.6;
+  /* transform: translateY(4px); */
+  transform: scale(.9);
+}
+
