@@ -4,12 +4,17 @@ $(document).ready(function() {
 
   $('.yolo').click(function() {
     event.preventDefault();
-    newLocation = this.href;
-    $('body').fadeOut(1000, newpage);
+    $('body').fadeOut(1000, callVid);
   });
 
-  function newpage() {
-    window.location.href = "/playvid";
+  function callVid() {
+    $.ajax({
+      type: 'POST',
+      url: '/',
+      complete: function() {
+        $('body').fadeIn();
+      }
+    }); 
   }
 
 });

@@ -15,12 +15,13 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
-app.get('/playvid', (req, res) => {
+app.post('/', function (req, res) {
   let camera = manager.create('./public/video.mp4');
   camera.play();
   camera.on('end', function(){
-    return res.redirect('/');
+    res.send('Complete Ajax Req.');
   });
 });
 
 app.listen('3000', () => {});
+
