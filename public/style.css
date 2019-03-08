@@ -112,6 +112,10 @@ h1 {
     cursor: pointer;
 }
 
+.btn--play:focus {
+    outline: 0;
+}
+
 @keyframes fademein {
   0%   { opacity: 0; }
   100% { opacity: 1; }
