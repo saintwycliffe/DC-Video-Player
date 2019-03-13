@@ -113,7 +113,11 @@ h1 {
 }
 
 .btn--play:focus {
+<<<<<<< Updated upstream
     outline: 0;
+=======
+    outline: 0
+>>>>>>> Stashed changes
 }
 
 @keyframes fademein {
