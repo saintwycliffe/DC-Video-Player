@@ -2,19 +2,15 @@ $(document).ready(function() {
 
   $('body').fadeIn(2000);
 
-  $('.yolo').click(function() {
-    event.preventDefault();
-    $('body').fadeOut(1000, callVid);
-  });
-
-  function callVid() {
-    $.ajax({
-      type: 'POST',
-      url: '/',
-      complete: function() {
-        $('body').fadeIn();
-      }
-    }); 
-  }
+	const socket = io();
+	$('.yolo').click(function(){
+		event.preventDefault();
+		$('.b-container').fadeOut(1000, function(){
+			socket.emit('create');
+		});
+	})
+	socket.on('gohome', function(){
+		$('.b-container').fadeIn();
+	})
 
 });
