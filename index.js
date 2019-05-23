@@ -20,7 +20,7 @@ const config = require('config');
 io.sockets.on('connection', function(socket) {
 	console.log('New client @', socket.id);
 	socket.on('create', function(){
-		let video = config.get(environment + '.video');
+		let video = config.get('index.video');
 		let camera = manager.create(video);
 		camera.play();
 		camera.on('end', function(){
@@ -32,7 +32,7 @@ io.sockets.on('connection', function(socket) {
 
 app.get('/', (req, res) => {
   console.log('Page Loaded');
-  let data = config.get(environment);
+  let data = config.get('index');
   res.render('index.ejs', data);
 });
 
