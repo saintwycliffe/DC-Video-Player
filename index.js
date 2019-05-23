@@ -14,10 +14,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 app.use(express.static(__dirname + '/public'));
 
+const environment = process.env.NODE_ENV || 'development';
+const config = require('config');
+
 io.sockets.on('connection', function(socket) {
 	console.log('New client @', socket.id);
 	socket.on('create', function(){
-		let camera = manager.create('./public/video.mp4');
+		let video = config.get(environment + '.video');
+		let camera = manager.create(video);
 		camera.play();
 		camera.on('end', function(){
 			io.emit('gohome');
@@ -28,6 +32,7 @@ io.sockets.on('connection', function(socket) {
 
 app.get('/', (req, res) => {
   console.log('Page Loaded');
-  res.render('index.ejs');
+  let data = config.get(environment);
+  res.render('index.ejs', data);
 });
 

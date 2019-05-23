@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('body').fadeIn(2000);
 
 	const socket = io();
-	$('.yolo').click(function(){
+	$('.yolo').click(function(event){
 		event.preventDefault();
 		$('.b-container').fadeOut(1000, function(){
 			socket.emit('create');

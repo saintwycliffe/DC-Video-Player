@@ -62,7 +62,7 @@ h1 {
 }
 
 .b-container {
-  background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./background.png');
+  background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5));
   background-size:cover;
   position: absolute;
   top: 0;
@@ -113,11 +113,7 @@ h1 {
 }
 
 .btn--play:focus {
-<<<<<<< Updated upstream
-    outline: 0;
-=======
     outline: 0
->>>>>>> Stashed changes
 }
 
 @keyframes fademein {
