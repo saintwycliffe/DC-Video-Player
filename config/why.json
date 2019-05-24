@@ -1,0 +1,7 @@
+{
+    "index" : {
+        "video": "./public/videos/why-bible.mp4",
+        "title": "Why Bible Translation",
+        "background": "./public/img/why-background.png"
+    }
+}

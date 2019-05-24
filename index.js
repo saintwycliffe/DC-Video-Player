@@ -14,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(ejsLayouts);
 app.use(express.static(__dirname + '/public'));
 
-const environment = process.env.NODE_ENV || 'development';
 const config = require('config');
 
 io.sockets.on('connection', function(socket) {
@@ -32,7 +31,7 @@ io.sockets.on('connection', function(socket) {
 
 app.get('/', (req, res) => {
   console.log('Page Loaded');
-  let data = config.get('index');
-  res.render('index.ejs', data);
+  let variables = config.get("index");
+  res.render('index.ejs', { title: variables.title, background: variables.background,  } );
 });
 

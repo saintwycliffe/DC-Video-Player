@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "complex": "NODE_ENV=complex"
+    "test": "SET NODE_ENV=test&& node index.js",
+    "why": "SET NODE_ENV=why&& node index.js",
+    "thai": "SET NODE_ENV=thai&& node index.js",
+    "translating": "SET NODE_ENV=translating&& node index.js",
+    "complex": "SET NODE_ENV=complex&& node index.js",
+    "deaf": "SET NODE_ENV=deaf&& node index.js",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install"
   },
   "author": "",
   "license": "ISC",
