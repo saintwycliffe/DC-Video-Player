@@ -2,6 +2,6 @@
     "index" : {
         "video": "./public/videos/translating-for-understanding.mp4",
         "title": "Translating for Understanding",
-        "background": "./public/img/translating-for-understanding-background.png"
+        "background": "/img/translating-for-understanding-background.png"
     }
 }

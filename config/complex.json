@@ -2,6 +2,6 @@
     "index" : {
         "video": "./public/videos/complex.mp4",
         "title": "How One Word Can Be Complex",
-        "background": "./public/img/complex-background.png"
+        "background": "/img/complex-background.png"
     }
 }

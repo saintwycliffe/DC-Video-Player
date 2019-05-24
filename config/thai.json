@@ -2,6 +2,6 @@
     "index" : {
         "video": "./public/videos/thai-sign.mp4",
         "title": "A Vision for Transformation (Thai Sign)",
-        "background": "./public/img/thai-sign-background.png"
+        "background": "/img/thai-sign-background.png"
     }
 }

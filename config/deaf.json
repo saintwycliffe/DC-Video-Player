@@ -2,6 +2,6 @@
     "index" : {
         "video" : "./public/videos/deaf-bible-society.mp4",
         "title" : "Deaf Bible Society - ASL - Matthew 3:1-17",
-        "background" : "./public/img/deaf-bible-society-background.png"
+        "background" : "/img/deaf-bible-society-background.png"
     }
 }

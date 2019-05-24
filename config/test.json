@@ -2,6 +2,6 @@
     "index" : {
         "video": "./public/videos/test.mp4",
         "title": "Test",
-        "background": "./public/img/test-background.png"
+        "background": "/img/test-background.png"
     }
 }
