@@ -56,5 +56,8 @@ typings/
 
 .DS_Store
 
+# VSCode debugging
+.vscode
+
 # dotenv environment variables file
 # .env
