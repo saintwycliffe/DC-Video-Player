@@ -1,28 +1,38 @@
 # Wycliffe Discovery Center Video Player
- A Video-player application for rotunda panel in Wycliffe's very own [Discovery Center](https://www.wycliffe.org/discovery-center).
+ A video player application for rotunda panel in Wycliffe's very own [Discovery Center](https://www.wycliffe.org/discovery-center) running on a raspberry pi
 
-# Technologies Used
-- Node
-- Express  
-- EJS Layout
-for Raspbian OS on Rasberry Pi with 24 inch 1080x1920 Elotouch-screen.
+## Technologies Used
+- [Node](https://nodejs.org)
+- [Express](https://expressjs.com/)
+- [EJS Layout](https://ejs.co/)
+- [Raspbian OS](https://www.raspberrypi.org/downloads/raspbian/) on Rasberry Pi 3b with 16Gb on a 24" 1080x1920 Elotouch-screen
+  - pi configuration files @ https://github.com/Wycliffe-USA/pi-kiosk-video
 
-# Additional Node Modules
-- [omx-manager](https://www.npmjs.com/package/omx-manager)
+## Additional Node Modules
+- [omx-manager](https://www.npmjs.com/package/omx-manager) for managing video on the raspberry pi
+- [node-config](https://github.com/lorenwest/node-config) for configuring different videos
 
-## To Run Locally
-Make sure you have [Node.js](http://nodejs.org/).
-
-Install proper fonts on local Raspberry Pi:
+## Prerequisites
+- Make sure you have [Node.js](https://nodejs.org/).
+- Install proper fonts on local Raspberry Pi:
 ```
 sudo cp GothamSSm-Book.ttf /usr/share/fonts/truetype/gotham/
 ```
 
-Replace in /public folder relevant video and background. In /views/index.ejs change the title.
+## Files
+Replace in `/public/videos` folder relevant video and `/public/img` for backgrounds and add a new JSON config file in `config`.
 
-In root directory
+## Execution (in root directory)
 ```
 npm install
 npm run build
-node index.js
+npm run {configuration_name}
+```
+## Rebuilding
+```
+npm run reinstall
+```
+## Clean
+```
+npm run clean
 ```
