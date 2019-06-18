@@ -18,6 +18,7 @@
 ```
 sudo cp GothamSSm-Book.ttf /usr/share/fonts/truetype/gotham/
 ```
+- Run `install_git_lfs.sh` in the root directory to install Git LFS (for getting video files)
 
 ## Files
 Replace in `/public/videos` folder relevant video and `/public/img` for backgrounds and add a new JSON config file in `config`.
