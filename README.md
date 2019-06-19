@@ -19,7 +19,7 @@
 ```
 sudo cp GothamSSm-Book.ttf /usr/share/fonts/truetype/gotham/
 ```
-- Run `./install_git_lfs.sh` in the root directory to install Git LFS (for getting video files)
+- Run `chmod +x install_git_lfs.sh` then `./install_git_lfs.sh` in the root directory to install Git LFS (for getting video files)
 - Get omxplayer `sudo apt-get install omxplayer`
 
 ## Files
