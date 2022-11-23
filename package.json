@@ -14,6 +14,6 @@
     "express": "^4.16.4",
     "express-ejs-layouts": "^2.5.0",
     "omx-manager": "^0.1.4",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.5.0"
   }
 }
